@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Body Element */
+
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+
+/* Product Preview Card Component */
+/* --> Card Container */
+
+.product-preview-card-component {
+  width: 90%;
+  margin: 0px auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Card Container */
+/* --> Left/Top Side */
+/* --> Right/Bottom Side */
+
+.card-container {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 9px;
+  min-width: 175px;
+  max-width: 725px;
+  min-height: 400px;
+  max-height: 475px;
+}
+
+
+/* Left/Top Side */
+/* --> Picture Element (Product Image) */
+
+.left-top-side {
+  width: 50%;
+}
+
+.left-top-side .product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+}
+
+
+/* Right/Bottom Side */
+/* --> Right/Bottom Side Content */
+
+.right-bottom-side {
+  width: 50%;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Right/Bottom Side Content */
+/* --> Product Name */
+/* --> Title Container */
+/* --> Desc Container */
+/* --> Price Container */
+/* --> Add To Card Btn Container */
+
+.right-bottom-side-content {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-x: hidden;
+  margin-top: 15px;
+}
+
+
+/* Product Name */
+
+.product-name {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  margin: 0px 0px 25px 5px;
+  opacity: 0.9;
+}
+
+
+/* Title Container */
+/* --> <h1> Element */
+
+.title-container, .price-content {
+  font-family: 'Fraunces', serif;
+}
+
+.title-container > h1 {
+  line-height: 2.15rem;
+  margin: 10px 0px 15px 3px;
+}
+
+
+/* Desc Container */
+/* <p> Element */
+
+.desc-container {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.4rem;
+  margin-left: 5px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+/* Price Container */
+/* --> <h1> Element (Price Content) */
+/* --> <span> Element (Sale Price) */
+
+.price-container {
+  display: flex;
+  align-items: center;
+  color:hsl(158, 36%, 37%);
+  line-height: 0;
+  margin: 10px 0px 20px 5px;
+}
+
+.sale-price {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 15px;
+  opacity: 0.9;
+}
+
+
+/* Add To Card Btn Container */
+/* --> <button> Element (Add To Card Btn) */
+
+.add-to-card-container {
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+/* Add To Card Btn */
+/* --> <svg> Element (Cart Icon) */
+/* --> <span> Element (Btn Content) */
+
+.add-to-card-btn {
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 9px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-card-btn:hover {
+  background-color: hsl(159, 38%, 17%);
+  cursor: pointer;
+}
+
+
+/* Btn Content */
+
+.btn-content {
+  margin-left: 10px;
+}
+
+
+/* <div> Element (attribution) */
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px;
+}
+
+.attribution > a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: blue;
+}
+
+/* Media Queries */
+/* --> Screen and max-width: 700px */
+/* --> Screen and max-width: 500px (Small Screen) */
+/* --> Screen and min-width: 1700px (Large Screen) */
+
+@media screen and (max-width: 700px) {
+  .card-container {
+    max-height: 95%;
+  }
+
+  .right-bottom-side-content {
+    height: 100%;
+    margin: 20px 0px;
+    justify-content: center;
+  }
+}
+
+/* Small Screen */
+@media screen and (max-width: 500px) {
+  .product-preview-card-component {
+    min-height: 75vh;
+    margin: 30px auto;
+  }
+
+  .card-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .left-top-side {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .left-top-side .product-image {
+    object-fit: cover;
+    max-height: 300px;
+    border-radius: 9px 9px 0px 0px;
+  }
+  
+  .right-bottom-side {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px 0px 9px 9px;
+  }
+}
+
+/* Large Screen */
+@media screen and (min-width: 1700px) {
+  .card-container {
+    max-width: 1050px;
+  }
+}
