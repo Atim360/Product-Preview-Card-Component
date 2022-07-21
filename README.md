@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/Atim360/Product-Preview-Card-Component)
-- Live Site URL: [Live site URL](https://atim360.github.io/Product-Preview-Card-Component/)
+- Solution URL: [https://github.com/Atim360/Product-Preview-Card-Component](https://github.com/Atim360/Product-Preview-Card-Component)
+- Live Site URL: [https://atim360.github.io/Product-Preview-Card-Component/](https://atim360.github.io/Product-Preview-Card-Component/)
 
 ## My process
 
